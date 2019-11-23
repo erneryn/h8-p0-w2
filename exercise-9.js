@@ -22,7 +22,7 @@ console.log(hasilPerkalian);
 
 function processSentence(nama,age,address,hobby){
 
-    return ("Nama saya "+name+", umur saya "+ age+" tahun, alamat saya di " +address+", dan saya punya hobby yaitu hobby")
+    return ("Nama saya "+name+", umur saya "+ age+" tahun, alamat saya di " +address+", dan saya punya hobby yaitu "+hobby)
 }
 
 
