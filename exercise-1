@@ -1,0 +1,65 @@
+1.Newton Second Law
+	
+	a. simpan "massabenda" dengan nilai "600" Kg
+	b. simpan "percepatan" dengan nilai "2" ms
+	c. simpan "resultangaya" dengan value kosong
+	d. lakukan perhitungan sesuai rumus dengan mengkalikan "massabenda" x "percepatan"
+	e. hasil perhitungan di isi kedalam nilai "resultan"
+	f. tampilkan "resultangaya"
+
+	STORE "massabenda" with 600
+	STORE "percepatan" with 2
+	STORE "reslutangaya" without value
+	CALCULATE "massabenda" time "percepatan"
+	SET "resultangaya" value with calculation result
+	DISPLAY "resultangaya"
+
+2.Tahun Kabisat
+	
+	a. tentukan suatu tahun
+	b. periksa tahun habis apakah habis dibagi 4 , jika tidak berarti bukan tahun kabisat
+	c. jika tahun habis dibagi 4 , periksa tahun apakah tidak habis di bagi 100
+	d. jika tahun habis dibagi 4 dan tidak habis di bagi 100 maka Tahun Tersebut Tahun Kabisat
+	e. pada poin c jika habis di bagi 4 dan habis lagi di bagi 100 maka,
+	d. maka periksa lagi apakah habis di bagi 400
+	f. jika habis juga di bagi 400 maka tahun Kabisat
+	g. jika tidak habis maka bukan tahun kabisat 
+	
+	STORE "tahun"
+	IF "Tahun" Modulo 4 is 0
+		IF "Tahun" Modulo 100 is not 0
+		DISPLAY "Tahun Kabisat"
+		ElSE 
+			IF "Tahun" modulo 400 is 0
+			DISPLAY "Tahun Kabisat"
+			ELSE "Bukan Tahun Kabisat"
+	ELSE "Bukan Tahun Kabisat" 
+
+3. Laundry Day
+	
+	a. Simpan nilai pakaian Foxie dengan angka 0
+	b. Mesin akan menyala jika pakaian yang di masuukann jumlahya 20
+	c. Foxie akan memasukan pakaiannya satu per satu
+	d. saat foxie sudah memasukkan semua pakaiannya berjumlah 20
+	c. mesin akan menyala
+
+	STORE "Baju" with 0
+	WHILE "Baju" <=20
+		ADD "Baju" by 1
+	DISPLAY "Mesin Menyala"
+
+
+4. Periksa Kuku
+
+	a. Simpang nilai jumlah Siswa dengan angka 0
+	b. Guru akan bekeliling dari angka 1 sampai 40 
+	c. Jika kuku siswa panjang maka guru akan menghukum
+	d. Jika tidak atau pendek maka guru akan memuji
+
+	STORE "siswa" to 0
+	WHILE "siswa" <=40
+		ADD "MURID" by 1
+	IF "siswa" = "Kuku Panjang" 
+		DO Hukum
+	ELSE "Siswa" = Tidak Panjang"
+		DO Puji 
